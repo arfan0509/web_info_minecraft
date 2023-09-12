@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;500&family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Reset beberapa nilai default margin dan padding */
+body, h1, h2, h3, p, ul, li, figure, table, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body, h1, h2, h3, p, ul, li, figure, table, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #70B237;
+  color: #fff;
+  padding: 0.5rem 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  max-width: 120px; 
+  width: 100%; 
+  height: auto; 
+}
+
+.navtext {
+  display: flex;
+  gap: 2rem;
+  align-items: center; /* Mengatur logo dan teks menjadi sejajar vertikal */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0; /* Menghilangkan margin pada ul */
+  padding: 0; /* Menghilangkan padding pada ul */
+}
+ 
+nav li {
+  list-style-type: none;
+}
+
+nav a {
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  font-weight: bolder;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .header-content {
+    padding: 0 1rem; /* Mengurangi padding pada header di perangkat mobile */
+  }
+
+  .navtext {
+    gap: 1rem; /* Mengurangi jarak antara logo dan teks di perangkat mobile */
+  }
+
+  nav ul {
+    gap: 1rem; /* Mengurangi jarak antara link pada navigasi di perangkat mobile */
+  }
+}
+
+/* Main content */
+main {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  margin-top: 65px; /* Menambah margin atas agar header tidak menutupi konten */
+}
+
+.content-card {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-card h2 {
+  color: #70B237;
+  margin-bottom: 1rem;
+}
+
+
+
+.profile-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card p {
+  font-style: italic;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+
+.logo-img {
+  width: 100%; 
+  max-width: 200px; 
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-card h3 {
+  color: #70B237;
+  margin-top: 1.5rem;
+}
+
+.profile-card table {
+  width: 100%;
+  margin-top: 1rem;
+  border-collapse: collapse;
+}
+
+.profile-card th, .profile-card td {
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.profile-card th {
+  text-align: left;
+  color: #70B237;
+  font-weight: bold;
+}
+
+.profile-card a {
+  color: #70B237;
+  text-decoration: none;
+}
+
+.profile-card a:hover {
+  text-decoration: underline;
+}
+
+/* footer */
+footer {
+  background-color: #70B237;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.profile-card header {
+  text-align: center;
+}
+
+.featured-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  nav ul {
+    justify-content: space-around;
+  }
+
+  nav li {
+    margin: 0;
+  }
+}
